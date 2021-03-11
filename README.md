@@ -1,1 +1,3 @@
 # ritmGndWeb
+
+İlk deneme değişikliği
