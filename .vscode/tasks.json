@@ -9,12 +9,15 @@
             "command": "node-sass assets/css/main.scss assets/css/main.css",
             "group": "build",
             "problemMatcher": []
+<<<<<<< HEAD
         },
         {
             "type": "gulp",
             "task": "default",
             "problemMatcher": [],
             "label": "gulp: default"
+=======
+>>>>>>> f802ddeb0423df123216678ebc30c1db1fb52871
         }
     ]
 }

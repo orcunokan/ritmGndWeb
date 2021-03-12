@@ -1,5 +1,6 @@
 body {
   background: #FAFAFA;
+<<<<<<< HEAD
   color: #000000;
 }
 
@@ -23,3 +24,15 @@ body {
   font-size: 97px;
 }
 /*# sourceMappingURL=main.css.map */
+=======
+  color: #000000; }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.orcun {
+  font-size: 65px; }
+>>>>>>> f802ddeb0423df123216678ebc30c1db1fb52871
