@@ -1,0 +1,7 @@
+.main-container {
+    @include flexContainer(column, center, center);
+  }
+
+  .deneme{
+    font-size: 97px;
+  }
