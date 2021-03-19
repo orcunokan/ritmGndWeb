@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/orcunokan/ritmGndWeb#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -26,6 +27,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
+    "imagemin-pngquant": "^9.0.2",
     "node-sass": "^5.0.0"
   }
 }

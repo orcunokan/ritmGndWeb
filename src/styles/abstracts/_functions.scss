@@ -1,0 +1,20 @@
+$z-indexes: (
+    "tooltip", //80
+    "modal", //70
+    "cookies", //60
+    "nav", //50
+    "header", //40
+    "slider", //30
+    "footer", //20
+    "content", //10
+);
+
+// Z function return the z-index value
+@function z($name) {
+    @if index($z-indexes, $name) {
+      @return ((length($z-indexes) - index($z-indexes, $name)) + 1) * 10;
+    } @else {
+      @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+      @return null;
+    }
+  }

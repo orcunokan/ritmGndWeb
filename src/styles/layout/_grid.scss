@@ -1,0 +1,72 @@
+$grid_laptop: 1320;
+$grid_cols: 12;
+
+.content {
+    max-width: $grid_laptop * 1px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  @for $i from 1 through $grid_cols {
+    .col-#{$i} {
+      flex-basis: (100 / ($grid_cols / $i) ) * 1%;
+    }
+  }
+
+
+  
+    
+  
+  .content {
+    
+    @at-root {
+      [class*='col-'] {
+        border: 1px solid #000;
+      }
+    }
+  }
+
+  [class*=flex-],
+  [class~=flex]{
+    display: flex;
+  }
+
+  //FLEX
+  .flex{
+
+    //ALIGN-ITEMS
+    &-top {
+      align-items: flex-start;
+    }
+    &-middle {
+      align-items: center;
+      &-center {
+        justify-content: center;
+      }
+    }
+    &-bottom {
+      align-items: flex-end;
+    }
+
+    //JUSTIFY-CONTENT
+    &-space-between {
+      justify-content: center;
+    }
+
+    //FLEX-DIRECTION
+    &-column{
+      flex-direction: column;
+    }
+
+    &-column-reverse{
+      flex-direction: column-reverse;
+    }
+  }

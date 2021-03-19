@@ -1,0 +1,16 @@
+header{
+    padding: 21px 0;
+    position: relative;
+    z-index: z("header");
+
+    nav{
+        z-index: z("nav");
+        ul {
+            display: flex;
+            margin-left: auto!important;
+            li{
+                padding: 15px;
+            }
+        }
+    }
+}
