@@ -1,0 +1,25 @@
+main {
+  .nav {
+    li {
+      display: inline-block;
+
+      a{
+        font-family: "GothamXNarrowMedium", Georgia;
+      }
+
+      a::after {
+        clear: both;
+        content: "/";
+        padding: 0 10px;
+      }
+    }
+
+    li:nth-last-child(1) {
+      a::after {
+        content: "";
+        clear: both;
+        padding: 0;
+      }
+    }
+  }
+}

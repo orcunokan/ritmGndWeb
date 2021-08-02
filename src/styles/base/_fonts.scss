@@ -1,0 +1,40 @@
+$font-path: "font/";
+
+$font-light: "GothamXNarrowLight";
+@font-face {
+  font-family: $font-light;
+  src: url($font-path + "GothamXNarrow-Light.eot");
+  src: url($font-path + "GothamXNarrow-Light.eot?#iefix") format("embedded-opentype"),
+    url($font-path + "GothamXNarrow-Light.woff") format("woff"),
+    url($font-path + "GothamXNarrow-Light.ttf") format("truetype"),
+    url($font-path + "GothamXNarrow-Light.svg#GothamXNarrow-Light") format("svg");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+$font-medium: "GothamXNarrowMedium";
+@font-face {
+    font-family: $font-medium;
+    src: url($font-path + "GothamXNarrow-Medium.eot");
+    src: url($font-path + "GothamXNarrow-Medium.eot?#iefix") format("embedded-opentype"),
+      url($font-path + "GothamXNarrow-Medium.woff") format("woff"),
+      url($font-path + "GothamXNarrow-Medium.ttf") format("truetype"),
+      url($font-path + "GothamXNarrow-Medium.svg#GothamXNarrow-Medium") format("svg");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+$font-black: "GothamXNarrowBlack";
+@font-face {
+  font-family: $font-black;
+  src: url($font-path + "GothamXNarrow-Black.eot");
+  src: url($font-path + "GothamXNarrow-Black.eot?#iefix") format("embedded-opentype"),
+    url($font-path + "GothamXNarrow-Black.woff") format("woff"),
+    url($font-path + "GothamXNarrow-Black.ttf") format("truetype"),
+    url($font-path + "GothamXNarrow-Black.svg#GothamXNarrow-Black") format("svg");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}

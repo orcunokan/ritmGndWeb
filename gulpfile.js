@@ -9,12 +9,17 @@ var imageminpPNGquant = require('imagemin-pngquant');
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
+var flatten = require('gulp-flatten');
 
 var paths = {
   style: {
     src: 'src/styles/main.scss',
     dest: 'assets/style/',
     watch: 'src/styles/**/*.scss'
+  },
+  font: {
+    src: 'src/fonts/**/*.{ttf,woff,eof,svg}',
+    dest: 'assets/style/font/'
   },
   script: {
     src: 'src/scripts/**/*.js',
@@ -51,6 +56,13 @@ gulp.task('style', function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task('font', function() {
+ return gulp.src(paths.font.src)
+ .pipe(flatten())
+  .pipe(gulp.dest(paths.font.dest))
+  .pipe(browserSync.stream());
+});
+
 gulp.task('script', function() {
   return gulp.src(paths.script.src)
   .pipe(uglify())
@@ -82,10 +94,11 @@ gulp.task('image', function () {
 
 gulp.task('watch', function() {
   gulp.watch(paths.style.watch, gulp.series('style'));
+  gulp.watch(paths.font.src, gulp.series('font'));
   gulp.watch(paths.script.src, gulp.series('script'));
   gulp.watch(paths.image.src, gulp.series('image'));
   gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default', gulp.series('clean', gulp.parallel('style', 'script', 'image', 'browser-sync', 'watch')));
+gulp.task('default', gulp.series('clean', gulp.parallel('style', 'font', 'script', 'image', 'browser-sync', 'watch')));
 

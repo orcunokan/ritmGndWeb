@@ -20,18 +20,14 @@ $grid_cols: 12;
       flex-basis: (100 / ($grid_cols / $i) ) * 1%;
     }
   }
-
-
   
+.content {
     
-  
-  .content {
-    
-    @at-root {
+    /*@at-root {
       [class*='col-'] {
         border: 1px solid #000;
       }
-    }
+    }*/
   }
 
   [class*=flex-],
@@ -48,9 +44,9 @@ $grid_cols: 12;
     }
     &-middle {
       align-items: center;
-      &-center {
-        justify-content: center;
-      }
+    }
+    &-center {
+      justify-content: center;
     }
     &-bottom {
       align-items: flex-end;
@@ -58,7 +54,7 @@ $grid_cols: 12;
 
     //JUSTIFY-CONTENT
     &-space-between {
-      justify-content: center;
+      justify-content: space-between;
     }
 
     //FLEX-DIRECTION

@@ -1,0 +1,99 @@
+.nerede{
+    background: $text-white url($img-path + 'nerede-bg.png') no-repeat top right;
+    height: 275px;
+}
+
+.nerede a{
+    border: 1px solid #B8B8B8;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 60px;
+}
+
+.marka{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.marka ul li{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    background: $footer-bg;
+    overflow: hidden;
+}
+
+footer .col-9.content{
+    margin: 0;
+    padding: 35px;
+}
+
+footer .footin{
+    margin: auto!important;
+    justify-content: space-around;
+}
+
+footer .footin ul, footer .footin ul li a{
+    color: $text-white;
+    position: relative;
+}
+
+footer .footin ul li{
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+footer .footin ul li:nth-child(1){
+    margin-bottom: 25px;
+}
+
+footer .col-2 li:nth-child(1):after{
+    content: "";
+    width: 30px;
+    border-bottom: 1px solid $gundogdu-color;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    font-weight: bold;
+}
+
+footer .footin .right ul li a:after{ 
+    display: none!important;
+}
+
+footer .footin ul li:nth-child(1), footer .footin .footitle li a{
+    font-weight: bold;
+}
+
+footer .social{
+    display: inline-flex;
+    right: 0;
+}
+
+footer .social li{
+    padding:0 15px;
+}
+
+footer .social li:after{
+    display: none;
+}
+
+footer .right{
+    text-align:right;
+    color: $text-white;
+}
+
+footer .inek{
+    background-color: $gundogdu-color;
+    height: 300px;
+    width: 250px;
+}
+
+footer .inek img{
+    margin-top: 53px;
+}

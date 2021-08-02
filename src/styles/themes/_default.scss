@@ -1,56 +1,18 @@
 body {
   background: $main-bg;
   color: $main-color;
+  font-family: $font-light;
+}
+
+ul li a{
+  color: $black-color;
+}
+
+p{
+  line-height: 26px;
+  font-size: 18px;
 }
 
 .content img{
   max-width: 100%;
-}
-
-.lezzet{
-  padding: 170px 25px 0 0;
-
-  p{
-    text-align: right;
-    padding-top: 50px;
-    width: 380px;
-    float: right;
-  }
-}
-
-.catal{
-  padding-top: 25px;
-  overflow: hidden;
-  max-height: 625px;
-  flex-basis: 18.666667%;
-}
-
-.slogan {
-  position: relative;
-  padding: 100px 0 0 25px;
-  h1{
-    font-weight: bold;
-  }
-  p::after{
-    content:'';
-    width: 50%;
-    height: 16px;
-    background-color: #FFBF00;
-    position: absolute;
-    margin-top: 30px;
-    left: 25px;
-  }
-}
-
-.parallax{
-	background-image: url('../../../assets/image/parallax.jpg');
-	background-attachment: fixed;
-	background-position: top;
-	background-size: cover;
-	background-repeat: no-repeat;
-  text-align: center;
-}
-
-.parallax .content{
-  padding: 170px 0;
 }

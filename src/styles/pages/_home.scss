@@ -1,3 +1,66 @@
 .gundogdu{
-    background-image: url('../../../assets/image/gnd-bg.jpg');
+    background-image: url($img-path + 'gnd-bg.jpg');
 }
+
+.catal{
+  padding-top: 25px;
+  overflow: hidden;
+  max-height: 625px;
+  flex-basis: 18.666667%;
+}
+
+.slogan {
+  position: relative;
+  padding: 100px 0 0 25px;
+  h1{
+    font-family: $font-medium;
+    font-size: 34px;
+    width: 50%;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
+  p::after{
+    content:'';
+    width: 50%;
+    height: 16px;
+    background-color: $gundogdu-color;
+    position: absolute;
+    margin-top: 38px;
+    left: 25px;
+  }
+}
+
+.lezzet{
+    padding: 170px 25px 0 0;
+  
+    p{
+      text-align: right;
+      padding-top: 50px;
+      max-width: 430px;
+      float: right;
+    }
+  }
+
+  .parallax{
+    background-image: url($img-path + 'parallax.jpg');
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    .content{
+      padding: 150px 0;
+    }
+
+    h2{
+      font-size: 50px;
+    letter-spacing: 3px;
+    }
+
+    p{
+      font-family: $font-medium;
+      font-size: 20px;
+      padding: 32px 0;
+    }
+  }
