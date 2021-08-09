@@ -30,7 +30,7 @@ footer{
 
 footer .col-9.content{
     margin: 0;
-    padding: 35px;
+    padding: 35px 0;
 }
 
 footer .footin{
@@ -48,7 +48,7 @@ footer .footin ul li{
     margin-bottom: 9px;
 }
 
-footer .footin ul li:nth-child(1){
+footer .footin ul.col-2 li:nth-child(1){
     margin-bottom: 25px;
 }
 
@@ -57,7 +57,7 @@ footer .col-2 li:nth-child(1):after{
     width: 30px;
     border-bottom: 1px solid $gundogdu-color;
     position: absolute;
-    left: 0;
+    left: 26px;
     top: 35px;
     font-weight: bold;
 }
@@ -66,8 +66,30 @@ footer .footin .right ul li a:after{
     display: none!important;
 }
 
-footer .footin ul li:nth-child(1), footer .footin .footitle li a{
+footer .footin ul.col-2 li:nth-child(1), footer .footin .footitle li a{
     font-weight: bold;
+}
+
+footer .footin ul.col-2{
+    padding: 0 25px;
+}
+
+footer .footin .right p{
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+footer .footin .right ul li a{
+    color: #7b7b7b;
+}
+
+footer .footin .right ul:nth-child(3) li:last-child a{
+    color: #3a3a3a;
+    margin-top: 15px;
+}
+
+footer .footin .right ul:nth-child(3) li:last-child {
+    margin-top: 21px;
 }
 
 footer .social{
