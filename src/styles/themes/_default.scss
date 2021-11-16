@@ -4,15 +4,13 @@ body {
   font-family: $font-light;
 }
 
-ul li a{
-  color: $black-color;
-}
-
 p{
   line-height: 26px;
   font-size: 18px;
 }
 
-.content img{
-  max-width: 100%;
+@media (max-width:1024px) {
+  p{
+    line-height: 23px;
+  }
 }

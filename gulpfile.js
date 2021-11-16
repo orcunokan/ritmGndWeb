@@ -28,6 +28,10 @@ var paths = {
   image: {
     src: 'src/images/**/*.{gif,png,jpg,svg}',
     dest: 'assets/image/'
+  },
+  icon: {
+    src: 'node_modules/@fortawesome/fontawesome-free/webfonts/*',
+    dest: 'assets/style/font/'
   }
 };
 
@@ -92,13 +96,19 @@ gulp.task('image', function () {
       .pipe(browserSync.stream());
 });
 
+gulp.task('icon', function() {
+  return gulp.src(paths.icon.src)
+      .pipe(gulp.dest(paths.icon.dest));
+});
+
 gulp.task('watch', function() {
   gulp.watch(paths.style.watch, gulp.series('style'));
   gulp.watch(paths.font.src, gulp.series('font'));
   gulp.watch(paths.script.src, gulp.series('script'));
   gulp.watch(paths.image.src, gulp.series('image'));
+  gulp.watch(paths.icon.src, gulp.series('icon'));
   gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default', gulp.series('clean', gulp.parallel('style', 'font', 'script', 'image', 'browser-sync', 'watch')));
+gulp.task('default', gulp.series('clean', gulp.parallel('style', 'font', 'script', 'image', 'icon', 'browser-sync', 'watch')));
 

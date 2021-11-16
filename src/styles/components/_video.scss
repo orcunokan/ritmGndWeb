@@ -1,0 +1,110 @@
+#video {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+
+  nav {
+    padding-top: 41px;
+  }
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0 !important;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+  }
+}
+
+#video-bg {
+  --fullGrid: 1 / 1 / -1 / -1;
+  display: grid;
+  display: -ms-grid;
+  grid-template-rows: 100vh;
+  -ms-grid-rows: 100vh;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.video-bg {
+  grid-area: var(--fullGrid);
+  object-fit: cover;
+  z-index: -1;
+}
+.video-bg::-webkit-media-controls {
+  display: none !important;
+}
+.video-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.video-bg::after {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.video-overlay.open ~ .o-scrollDown {
+  z-index: 0;
+  transition: all 200ms ease-in;
+}
+
+.o-scrollDown {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  transform: scale(1);
+  font-size: 2em;
+  color: #000;
+  z-index: 1;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}

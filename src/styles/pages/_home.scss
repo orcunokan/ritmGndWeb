@@ -64,3 +64,81 @@
       padding: 32px 0;
     }
   }
+
+  @media (max-width:1024px) {
+    .lezzet{
+      width: 47%;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .catal{
+      flex-basis: 20.666667%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  @media (min-width:767px) and (max-width:1023px) {
+    .lezzet {
+      width: 58%;
+      padding: 39px 0 0 0;
+  }
+    .content.flex{
+      flex-direction: column;
+      align-items: center;
+    }
+    .gundogdu {
+      background-repeat: no-repeat;
+    }
+    .lezzet p {
+      text-align: center;
+      padding-top: 25px;
+      max-width: 500px;
+    }
+    .catal{
+      display: none;
+    }
+    .slogan {
+      padding: 60px 40px;
+      text-align: center;
+      h1{
+        text-align: center;
+        width: 100%;
+      }
+      p:after {
+        content: "";
+        width: 40%;
+        height: 8px;
+        position: relative;
+        top: 25px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+  }
+  .parallax .content {
+    padding: 100px 0;
+}
+.parallax h2 {
+  font-size: 38px;
+}
+.nerede a {
+  padding: 15px;
+  font-size: 24px;
+  line-height: 27px;
+  margin: 0 50px;
+}
+.marka{
+  flex-direction: column;
+  ul{
+    margin-top: 40px;
+    li{
+      margin: 0 20px;
+    }
+  }
+}
+  }

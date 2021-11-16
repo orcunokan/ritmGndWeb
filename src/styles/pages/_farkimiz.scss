@@ -1,0 +1,92 @@
+.farkimizNav{
+    text-align: center;
+    h1{
+        font-size:54px;
+        font-family: $font-light;
+    }
+    p{
+        position: relative;
+        width: 4    0%;
+        margin: auto;
+        font-family: $font-medium;
+        margin-top:25px;
+    }
+    p::after {
+        content:"";
+        background-color: $gundogdu-color;
+        width: 60px;
+        height: 6px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        top: 13px;
+    }
+}
+
+.farkimiz{
+    padding: 25px;
+    ul{
+        li:nth-last-child(2) img, li:last-child img{
+            position: relative;
+            top: -47px;
+        }
+        li{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            :first-child h2, :first-child p{
+                text-align: right;
+            }
+            :first-child p:nth-child(2)::before{
+                content:'';
+                right: 0;
+            }            
+            h2{
+                font-family: $font-medium;
+                font-size: 26px;
+                line-height: 44px;
+                strong{
+                    font-family: $font-black;
+                    font-size: 55px;
+                }
+            }
+            :nth-last-child(2){
+                strong:nth-child(2){
+                    color: $gundogdu-color;
+                }
+            }
+            img{
+                max-width: 70%;
+                height: auto;
+                width: auto;
+                max-height: 100vh;
+            }
+            section{
+                margin: 0 20px;
+                max-width: 30%;
+                p:nth-child(3) {
+                    color:$black-color;
+                    font-family: $font-light;
+                    line-height: 22px;
+                    margin-top: 19px;
+                }
+                p:nth-child(2) {
+                    color:$gundogdu-color;
+                    font-family: $font-medium;
+                    position: relative;
+                }
+                p:nth-child(2)::before {
+                    content:'';
+                    width:60px;
+                    height: 1px;
+                    background-color: #707070;
+                    position:absolute;
+                    bottom: -8px;
+                }
+            }
+        }
+
+
+    }
+}

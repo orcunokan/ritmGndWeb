@@ -3,6 +3,7 @@
 @import 'abstracts/mixins';
 
 @import 'vendors/bootstrap';
+@import 'vendors/fontawesome';
 
 @import 'base/reset';
 @import 'base/fonts';
@@ -14,11 +15,13 @@
 @import 'layout/forms';
 
 @import 'components/buttons';
-@import 'components/slider';
+@import 'components/video';
 
 @import 'pages/home';
 @import 'pages/contact';
 @import 'pages/product_detail';
+@import 'pages/product';
+@import 'pages/farkimiz';
 
 @import 'themes/default';
 @import 'themes/admin';
