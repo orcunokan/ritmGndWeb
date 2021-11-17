@@ -3,11 +3,17 @@
   background-color: black;
   height: 100vh;
   min-height: 25rem;
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  nav {
-    padding-top: 41px;
+  .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
   }
 
   video {

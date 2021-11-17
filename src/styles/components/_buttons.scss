@@ -18,3 +18,11 @@
     font-size: 20px;
     font-family: $font-medium;
   }
+
+  @media screen and (max-width: 568px) {
+  .btn-primary {
+    padding: 8px 24px 7px;
+    font-size: 16px;
+  }
+}
+  

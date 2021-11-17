@@ -1,5 +1,5 @@
-main{
-  ul.nav{
+main {
+  ul.nav {
     margin: 15px 0;
     a {
       color: $black-color;
@@ -8,26 +8,25 @@ main{
 }
 
 main .productDetail {
-
   h1 {
     font-family: $font-black;
     font-size: 150px;
-    color: #B0D143;
+    color: #b0d143;
     display: inline-block;
     line-height: 145px;
   }
-  p{
+  p {
     margin: 17px 0;
   }
-  section{
+  section {
     max-width: 520px;
-    a{
+    a {
       background-color: $gundogdu-color;
       color: $text-white;
       font-family: $font-medium;
       padding: 10px 22px;
       border-radius: 15px;
-      i{
+      i {
         padding-right: 4px;
       }
     }
@@ -43,16 +42,16 @@ main .productInfo {
     margin: 5px 0;
   }
   section:nth-child(1) {
-      p{
-          max-width: 460px;
-      }
+    p {
+      max-width: 460px;
+    }
   }
   section {
     h2 {
-        font-size: 20px;
-        margin-bottom: 14px;
-        font-family: $font-medium;
-      }
+      font-size: 20px;
+      margin-bottom: 14px;
+      font-family: $font-medium;
+    }
     .column {
       flex: 1;
       margin: 2px;
@@ -64,7 +63,7 @@ main .productInfo {
         margin-right: 0;
       }
       font-family: $font-medium;
-      
+
       p {
         line-height: 34px;
         font-size: 16px;
@@ -77,49 +76,115 @@ main .productInfo {
   }
 }
 
-@media (min-width:767px) and (max-width:1023px) {
+@media screen and (max-width: 1023px) {
   main .productDetail h1 {
     font-size: 115px;
+    line-height: 115px;
   }
-  .productDetail{
+  .productDetail {
     flex-direction: column;
-    section{
+    section {
       margin-bottom: 30px;
       text-align: center;
     }
   }
   main .productDetail section {
     max-width: 100%;
+  }
+  main .productDetail img {
+    max-width: 675px;
+    height: auto;
+    margin: auto;
+    width: 100%;
+  }
+  main .productDetail section {
+    margin: auto;
+  }
+  main .productInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .productInfo section:first-child {
+    margin-bottom: 30px !important;
+    text-align: center;
+    p {
+      max-width: 80% !important;
+      margin: auto;
+    }
+  }
+  .productInfo div:first-child h2 {
+    width: 190px !important;
+  }
+  .productInfo div:last-child h2 {
+    width: 105px;
+  }
+  main ul.nav {
+    text-align: center;
+  }
+  main .productDetail p {
+    padding: 0 25px;
+    margin-bottom: 30px;
+  }
+  .nerede {
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+    i {
+      font-size: 42px;
+    }
+  }
 }
-main .productDetail img {
-  max-width: 675px;
-  height: auto;
-  margin: auto;
-}
-main .productDetail section {
-  margin: auto;
-}
-main .productInfo {
-  flex-direction: column;
-  align-items: center;
-}
-.productInfo section:first-child{
-  margin-bottom: 30px!important;
-  text-align: center;
-  p{max-width: 80%!important;
-  margin:auto;}
-}
-.productInfo div:first-child h2{
-  width: 190px!important;
-}
-.productInfo div:last-child h2{
-  width: 105px;
-}
-main ul.nav {
-  text-align: center;
-}
-main .productDetail p {
-  padding: 0 25px;
-  margin-bottom: 30px;
-}
+
+@media screen and (max-width: 568px) {
+  p {
+    font-size: 16px !important;
+  }
+  .productDetail {
+    img {
+      margin-top: 30px !important;
+    }
+
+    h1 {
+      font-size: 62px !important;
+      line-height: 69px !important;
+    }
+  }
+
+  .productInfo {
+    div:first-child h2 {
+      width: 150px !important;
+    }
+    div:last-child h2 {
+      width: 78px !important;
+    }
+    section {
+      font-size: 14px !important;
+      &:first-child p {
+        max-width: 95% !important;
+      }
+      .column {
+        padding: 10px 6px !important;
+        h2 {
+          font-size: 16px !important;
+        }
+        p {
+          font-size: 15px !important;
+          font-family: &font-;
+        }
+      }
+    }
+    .productInfo div:first-child h2 {
+      width: 144px !important;
+    }
+  }
+  .marka {
+    flex-direction: column;
+    ul {
+      margin-top: 25px;
+      li {
+        margin: 0 11px;
+      }
+    }
+  }
 }

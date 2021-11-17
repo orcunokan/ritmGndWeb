@@ -1,13 +1,14 @@
-$grid_laptop: 1320;
+$grid_width: 1320;
 $grid_cols: 12;
 
-.content {
-    max-width: $grid_laptop * 1px;
+header, .content {
+    max-width: $grid_width * 1px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
     box-sizing: border-box;
   }
+
 
   .row {
     display: flex;
@@ -19,15 +20,6 @@ $grid_cols: 12;
     .col-#{$i} {
       flex-basis: (100 / ($grid_cols / $i) ) * 1%;
     }
-  }
-  
-.content {
-    
-    /*@at-root {
-      [class*='col-'] {
-        border: 1px solid #000;
-      }
-    }*/
   }
 
   [class*=flex-],

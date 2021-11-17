@@ -1,177 +1,259 @@
-.nerede{
-    background: $text-white url($img-path + 'nerede-bg.png') no-repeat top right;
-    height: 275px;
+.nerede {
+  background: $text-white url($img-path + "nerede-bg.png") no-repeat top right;
+  height: 275px;
 }
 
-.nerede a{
-    border: 1px solid #B8B8B8;
-    padding: 20px 40px;
-    text-align: center;
-    font-size: 30px;
-    margin: 0 60px;
-    color: $black-color;
+.nerede a {
+  border: 1px solid #b8b8b8;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 60px;
+  color: $black-color;
 }
 
-.nerede i{
-    font-size: 55px;
-    padding-bottom: 15px;
-    color: $gundogdu-color;
+.nerede i {
+  font-size: 55px;
+  padding-bottom: 15px;
+  color: $gundogdu-color;
 }
 
-.marka{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 32px;
+.marka {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 32px;
 }
 
-.marka ul li{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+.marka ul li {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
-footer{
-    background: $footer-bg;
-    overflow: hidden;
+footer {
+  background: $footer-bg;
+  overflow: hidden;
 }
 
-footer .col-9.content{
-    margin: 0;
-    padding: 35px 0;
+footer .col-9.content {
+  margin: 0;
+  padding: 35px 0;
 }
 
-footer .footin{
-    margin: auto!important;
-    justify-content: space-around;
+footer .footin {
+  margin: auto !important;
+  justify-content: space-around;
 }
 
-footer .footin ul, footer .footin ul li a{
-    color: $text-white;
-    position: relative;
+footer .footin ul,
+footer .footin ul li a {
+  color: $text-white;
+  position: relative;
 }
 
-footer .footin ul li{
-    margin-top: 9px;
-    margin-bottom: 9px;
+footer .footin ul li {
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
-footer .footin ul.col-2 li:nth-child(1){
-    margin-bottom: 25px;
+footer .footin ul.col-2 li:nth-child(1) {
+  margin-bottom: 25px;
 }
 
-footer .col-2 li:nth-child(1):after{
-    content: "";
-    width: 30px;
-    border-bottom: 1px solid $gundogdu-color;
-    position: absolute;
-    left: 23px;
-    top: 35px;
-    font-weight: bold;
+footer .col-2 li:nth-child(1):after {
+  content: "";
+  width: 30px;
+  border-bottom: 1px solid $gundogdu-color;
+  position: absolute;
+  left: 23px;
+  top: 35px;
+  font-weight: bold;
 }
 
-footer .footin .right ul li a:after{ 
-    display: none!important;
+footer .footin .right ul li a:after {
+  display: none !important;
 }
 
-footer .footin ul.col-2 li:nth-child(1), footer .footin .footitle li a{
-    font-weight: bold;
+footer .footin ul.col-2 li:nth-child(1),
+footer .footin .footitle li a {
+  font-weight: bold;
 }
 
-footer .footin ul.col-2{
-    padding: 0 23px;
+footer .footin ul.col-2 {
+  padding: 0 23px;
 }
 
-footer .footin .right p{
-    margin-bottom: 25px;
-    font-size: 16px;
+footer .footin .right p {
+  margin-bottom: 25px;
+  font-size: 16px;
 }
 
-footer .footin .right ul li a{
-    color: #7b7b7b;
+footer .footin .right ul li a {
+  color: #7b7b7b;
 }
 
-footer .footin .right ul:nth-child(3) li:last-child a{
-    color: #3a3a3a;
-    margin-top: 15px;
+footer .footin .right ul:nth-child(3) li:last-child a {
+  color: #3a3a3a;
+  margin-top: 15px;
 }
 
 footer .footin .right ul:nth-child(3) li:last-child {
-    margin-top: 21px;
+  margin-top: 21px;
 }
 
-footer .social{
-    display: inline-flex;
-    right: 0;
+footer .social {
+  display: inline-flex;
+  right: 0;
 }
 
-footer .social li{
-    padding: 0px 9px;
-    font-size: 22px;
-    color: $gundogdu-color;
+footer .social li {
+  padding: 0px 9px;
+  font-size: 22px;
+  color: $gundogdu-color;
 }
 
-footer .social li a i{
-    color: $gundogdu-color;
+footer .social li a i {
+  color: $gundogdu-color;
 }
 
-footer .social li:after{
-    display: none;
+footer .social li:after {
+  display: none;
 }
 
-footer .right{
-    text-align:right;
-    color: $text-white;
+footer .right {
+  text-align: right;
+  color: $text-white;
 }
 
-footer .inek{
-    background-color: $gundogdu-color;
-    height: 300px;
-    width: 250px;
+footer .inek {
+  background-color: $gundogdu-color;
+  height: 300px;
+  width: 250px;
 }
 
-footer .inek img{
-    margin-top: 53px;
+footer .inek img {
+  margin-top: 53px;
 }
 
-@media (max-width:1024px) {
-    footer{
-        font-size: 15px;
-        .footin img{
+@media screen and (min-width: 1024px) and (max-width: 1159px) {
+  footer {
+    font-size: 15px;
+    .footin img {
+      display: none;
+    }
+    .footin ul.col-2 {
+      padding: 0 6px;
+    }
+    .col-2 li:first-child:after {
+      content: "";
+      left: 6px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  footer {
+    flex-direction: column-reverse;
+    .col-9.content {
+      padding: 27px 0;
+      width: 95%;
+    }
+    .footin {
+      padding: 25px 0;
+    }
+  }
+  footer .inek {
+    width: 100%;
+    height: 85px;
+    img {
+      width: 90px;
+      margin-top: 8px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      display: flex;
+    }
+  }
+
+  .footin {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footin {
+    img {
+      display: none;
+    }
+    .right p {
+      font-size: 14px;
+    }
+    ul li{
+        font-size: 14px;
+
+        &:first-child:after{
+            left:0;
+        }
+    }
+    ul.col-2 {
+        padding: 0!important;
+        margin: 0px 17px;
+    }
+  }
+  .nerede img{
+        width: 60%;
+  }
+
+  .marka {
+    font-size: 26px;
+    ul li img{
+      max-width: 100px;
+      height: auto;
+    }
+  }
+}
+
+
+@media screen and (max-width: 568px) {
+    .marka ul li {
+        margin: 0 10px;
+        img {
+            max-width: 67px;
+        }
+    }
+    .nerede {
+    
+    div{
+        display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly!important;
+    }
+     img {
+        width: 85%;
+    }
+    a {
+        font-size: 20px!important;
+        line-height: 17px!important;
+            margin: 12px 20px 0!important;
+    }
+
+    i {
+        font-size: 34px!important;
+    }
+    }
+    footer {
+        ul.col-2{
             display: none;
         }
-        .footin ul.col-2 {
-            padding: 0 6px;
-        }
-        .col-2 li:first-child:after {
-            content: "";
-            left: 6px;
-        }
-    }
-  }
-
-  @media (min-width:767px) and (max-width:1023px) {
-    footer{
-        flex-direction: column-reverse;
-        .col-9.content {
-            padding: 27px 0;
-            width: 95%;
-        }
-}
-    footer .inek {
-        width: 100%;
-        height: 150px;
-        img {
-            width: 19%;
-            margin-top: 3px;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-            display: flex;
+        .right{
+            text-align: center;
+            p{
+                font-size: 14px!important;
+            }
         }
     }
-
-    .footin{
-        flex-direction: row!important;
-        align-items: flex-start!important;
+    .marka {
+        font-size: 22px!important;
     }
-  }
+    }

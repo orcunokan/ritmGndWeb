@@ -1,8 +1,8 @@
-.gundogdu{
-    background-image: url($img-path + 'gnd-bg.jpg');
+.gundogdu {
+  background-image: url($img-path + "gnd-bg.jpg");
 }
 
-.catal{
+.catal {
   padding-top: 25px;
   overflow: hidden;
   max-height: 625px;
@@ -12,15 +12,15 @@
 .slogan {
   position: relative;
   padding: 100px 0 0 25px;
-  h1{
+  h1 {
     font-family: $font-medium;
     font-size: 34px;
     width: 50%;
     line-height: 42px;
     margin-bottom: 10px;
   }
-  p::after{
-    content:'';
+  p::after {
+    content: "";
     width: 50%;
     height: 16px;
     background-color: $gundogdu-color;
@@ -30,61 +30,64 @@
   }
 }
 
-.lezzet{
-    padding: 170px 25px 0 0;
-  
-    p{
-      text-align: right;
-      padding-top: 50px;
-      max-width: 430px;
-      float: right;
-    }
+.lezzet {
+  padding: 170px 25px 0 0;
+
+  p {
+    text-align: right;
+    padding-top: 50px;
+    max-width: 430px;
+    float: right;
+  }
+}
+
+.parallax {
+  background-image: url($img-path + "parallax.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  .content {
+    padding: 150px 0;
   }
 
-  .parallax{
-    background-image: url($img-path + 'parallax.jpg');
-    background-attachment: fixed;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-
-    .content{
-      padding: 150px 0;
-    }
-
-    h2{
-      font-size: 50px;
+  h2 {
+    font-size: 50px;
     letter-spacing: 3px;
-    }
-
-    p{
-      font-family: $font-medium;
-      font-size: 20px;
-      padding: 32px 0;
-    }
   }
 
-  @media (max-width:1024px) {
-    .lezzet{
-      width: 47%;
-      img{
-        width: 100%;
-        height: auto;
-      }
-    }
-    .catal{
-      flex-basis: 20.666667%;
-      img{
-        width: 100%;
-      }
+  p {
+    font-family: $font-medium;
+    font-size: 20px;
+    padding: 32px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1159px) {
+  .lezzet {
+    width: 47%;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
+  .catal {
+    flex-basis: 20.666667%;
+    img {
+      width: 100%;
+    }
+  }
+}
 
-  @media (min-width:767px) and (max-width:1023px) {
+/*@media screen and (min-width: 768px) and (max-width: 1023px) {
     .lezzet {
-      width: 58%;
+      width: 60%;
       padding: 39px 0 0 0;
+      img{
+        width: 100%;
+      }
   }
     .content.flex{
       flex-direction: column;
@@ -118,6 +121,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
+        left: 0;
     }
   }
   .parallax .content {
@@ -135,10 +139,112 @@
 .marka{
   flex-direction: column;
   ul{
-    margin-top: 40px;
+    margin-top: 25px;
     li{
       margin: 0 20px;
     }
   }
 }
+  }*/
+
+@media screen and (max-width: 1023px) {
+  .lezzet {
+    width: 60%;
+    padding: 39px 0 0 0;
+    img {
+      width: 100%;
+    }
   }
+  .content.flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gundogdu {
+    background-repeat: no-repeat;
+  }
+  .lezzet p {
+    text-align: center;
+    padding-top: 25px;
+    max-width: 500px;
+  }
+  .catal {
+    display: none;
+  }
+  .slogan {
+    padding: 60px 40px;
+    text-align: center;
+    h1 {
+      text-align: center;
+      width: 100%;
+    }
+    p:after {
+      content: "";
+      width: 40%;
+      height: 8px;
+      position: relative;
+      top: 25px;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      left: 0;
+    }
+  }
+  .parallax .content {
+    padding: 100px 0;
+  }
+  .parallax h2 {
+    font-size: 38px;
+  }
+  .nerede a {
+    padding: 15px;
+    font-size: 21px;
+    line-height: 27px;
+    margin: 0 20px;
+  }
+  .marka {
+    flex-direction: column;
+    ul {
+      margin-top: 25px;
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .video-text {
+    h1 {
+      font-size: 52px;
+      line-height: 35px;
+    }
+    span {
+      font-size: 20px;
+    }
+    p {
+      font-size: 26px !important;
+      line-height: 66px !important;
+    }
+  }
+  .lezzet {
+    width: 84%;
+  }
+  .slogan {
+    padding: 60px 20px !important;
+    h1 {
+      font-size: 26px;
+    }
+  }
+  .parallax {
+    .content {
+      padding: 60px 0 !important;
+    }
+    h2 {
+      line-height: 40px !important;
+    }
+    p {
+      padding: 32px 20px !important;
+    }
+  }
+}

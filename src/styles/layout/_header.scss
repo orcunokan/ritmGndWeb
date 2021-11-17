@@ -1,41 +1,50 @@
 header {
-  padding: 21px 0;
+  max-width: $grid_width + px;
+  margin: 0 auto;
+  padding: 40px 0;
   position: relative;
   z-index: z("header");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   nav {
     z-index: z("nav");
-    padding: 20px;
-    a {
-      color: $black-color;
+
+    ul:first-child li a {
+      padding: $menu-link-padding;
+      border: none;
     }
+
     ul {
       display: flex;
       margin-left: auto !important;
       li {
-        padding: 15px;
+        padding: 5px;
         display: flex;
         align-items: center;
         a {
           font-family: "GothamXNarrowMedium", Georgia;
           font-size: 18px;
+          color: $black-color;
         }
         i {
+          font-size: 22px;
+        }
+        i.fa-chevron-down,
+        i.fa-shopping-cart {
+          font-size: 15px;
           padding-left: 4px;
-          font-size: 14px;
+        }
+        &:nth-child(3) {
+          margin-right: 50px;
+        }
+        &:nth-child(5) {
+          margin-right: 20px;
+        }
+        &:nth-child(10) {
+          margin-left: 20px;
         }
       }
-    }
-
-    ul.last-ul li:nth-child(n + 3) {
-      padding: 15px 8px;
-    }
-    ul.last-ul li:nth-child(n + 3) i,
-    .lang i {
-      font-size: 22px;
-    }
-    ul.last-ul li:nth-child(3),
-    .lang i {
-      padding-left: 30px;
     }
   }
 }
@@ -45,8 +54,7 @@ header {
   text-align: center;
   color: $black-color;
   font-family: $font-medium;
-  height: 70vh;
-  margin-top: 120px;
+  margin: 70px 0;
   h1 {
     font-size: 100px;
     font-family: $font-black;
@@ -63,11 +71,50 @@ header {
   }
 }
 
-@media (max-width:1024px) {
-  header{
-    padding: 0;
+@media screen and (min-width: 1024px) and (max-width: 1159px) {
+  header nav ul li {
+    padding: 3px;
+    &:nth-child(3) {
+      margin-right: 0px;
+    }
+    &:nth-child(5) {
+      margin-right: 0px;
+    }
+    &:nth-child(10) {
+      margin-left: 20px;
+    }
   }
-  header nav ul, header .lang {
-    display: none;
 }
+
+@media screen and (max-width: 1023px) {
+  /*header nav {
+    display: none;
+  }*/
+
+  header {
+    padding: 20px 25px !important;
+    a img {
+      height: 70px;
+    }
+  }
+
+  #video .content {
+    padding: 25px 35px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .video-text {
+    h1 {
+      font-size: 94px;
+      line-height: 55px;
+    }
+    p {
+      font-size: 38px;
+      line-height: 110px;
+    }
+    span {
+      font-size: 28px;
+    }
+  }
 }
