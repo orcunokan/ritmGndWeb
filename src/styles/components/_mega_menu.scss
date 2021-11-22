@@ -29,7 +29,6 @@ nav {
 }
 
 .menu-bar {
-  background: $color-light;
   li {
     a {
       padding: $menu-link-padding;
@@ -61,8 +60,6 @@ nav {
 }
 
 .menu-link {
-  //padding: $menu-link-padding;
-  background: $color-light;
   transition: background 0.2s, color 0.2s;
   position: relative;
   z-index: 1;
@@ -318,7 +315,11 @@ nav {
     display: none;
   }
 
+  .menu-link{
+    background: $color-light;
+  }
   .menu-bar {
+    background: $color-light;
     flex-direction: column;
     position: fixed;
     top: 0;
