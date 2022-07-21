@@ -1,0 +1,43 @@
+.iletisim{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .ileSag{
+        ul{
+            display: block!important;
+            margin: 0!important;
+            li{
+                margin-bottom:10px;
+            }
+        }
+    }
+
+    input, textarea {
+        border: 1px solid #bebebe;
+    padding: 14px 20px;
+        color: #000;
+        width: 100%;
+        font-weight: 100;
+        font-family: Arial;
+    font-size: 14px;
+    }
+    .formButton{
+        width: 150px;
+        background-color: $gundogdu-color;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 17px;
+        &:hover{
+            opacity: .7;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .iletisim{
+        justify-content: center;
+    }
+}

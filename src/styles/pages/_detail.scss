@@ -1,0 +1,217 @@
+.pageDetail{
+    display: flex;
+    margin-top: 80px;
+
+    .sideMenu{
+        min-width: 220px;
+        font-size: 18px;
+        line-height: 40px;
+        margin-right: 75px;
+        h2{
+            color:$gundogdu-color;
+            font-family: $font-medium;
+            border: 1px solid #B5B5B5;
+            position: relative;
+            padding-top: 6px;
+            margin-bottom: 10px;
+            i{
+                color:#B2B2B2;
+                position: absolute;
+                top: 33%;
+                left: 23px;
+            }
+        }
+        a{
+            color: $black-color;
+        }
+
+        li{
+            &:hover {
+                background-color: $gundogdu-color;
+            }
+        }
+
+        h2, li{
+            padding-left: 55px;
+            padding-top: 6px;
+        }
+    }
+
+    .sideContent {
+        h2{
+            font-size:30px;
+            font-family: $font-medium;
+            color: $gundogdu-color;
+            margin-top: 50px;
+            position: relative;
+            &::before{
+                content: "";
+                width: 50px;
+                border-top:1px solid #000;
+                position: absolute;
+                bottom: -10px;
+            }
+        }
+        
+        ul{
+            display: flex;
+            &:first-child{
+                margin-top: 15px;
+            }
+        margin-top: 35px;
+        margin-bottom: 25px;
+        &.magaza 
+        {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li{
+            display: flex;
+    flex-direction: column;
+            max-width:300px;
+            margin-bottom: 40px;
+            img{
+                width:100%;
+                max-width:300px;
+                border: 15px solid #F8F8F8;
+            }
+            a{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                color: $black-color;
+                align-items: flex-end;
+                font-size: 18px;
+                font-family: $font-medium;
+                margin-top: 15px;
+                img{
+                    width:26px;
+                    height: 26px;
+                    border: none;
+                }
+            }
+            p{
+                margin-bottom: 0;
+                font-size:16px;
+                font-family: $font-light;
+            }
+        }
+    }
+        &.online {
+            li{
+                text-align: center;
+                &:first-child{
+                    text-align: left;
+                }
+                &:last-child{
+                    text-align: right;
+                }
+            }
+            img{
+            width: 77%;
+        }
+    }
+    }
+}
+
+.uretimTesisi, .referanslar{
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li{
+        margin-bottom: 20px;
+    }
+
+    img{
+        width: 100%;
+        max-width: 290px;
+        border: 15px solid #f8f8f8;
+        height: 150px;
+    }
+}
+
+.referanslar{
+    img{
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.bayiler{
+    width: 100%;
+    .bolge{
+        flex-direction: column!important;
+        li{
+            position: relative;
+            padding: 25px 0;
+            border-bottom: 1px solid #BEBEBE;
+            &:first-child{
+                padding-top: 0;
+            }
+            &:last-child{
+                border: none;
+            }
+            a{
+                position: absolute;
+                right: 0;
+                bottom: 20px;
+            }
+        }
+    }
+    p{
+        padding: 0;
+        &:first-child{
+            margin:0;
+            font-family: $font-medium;
+        }
+    }
+}
+}
+
+@media screen and (max-width: 1023px) {
+    .sideMenu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav{
+        justify-content: center;
+    }
+    .pageDetail .sideContent ul.magaza {
+        justify-content: space-around;
+        li{
+            max-width: 265px;
+        }
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .pageDetail .sideContent {
+    h2{
+        text-align: center;
+        &:before{
+            left: 44%;
+        }
+    }
+    ul{
+    flex-wrap: wrap;
+    &.online li {
+        width: 38%;
+        margin: auto;
+        margin-bottom: 10px;
+        &:first-child {
+            text-align: center;
+        }
+        &:last-child{
+            text-align: center;
+        }
+    }
+    &.magaza li{
+            max-width: 300px;
+        
+    }
+}
+}
+}
